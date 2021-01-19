@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/iv_all_texts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_infinity" />
+
+        <ImageView
+            android:id="@+id/iv_happy_texts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_smile" />
+
+        <ImageView
+            android:id="@+id/iv_good_morning_texts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_sun" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Hello World!"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_motivational_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/clique_no_botao_para_gerar_uma_frase"
+        android:textColor="@color/black"
+        android:textFontWeight="700"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="8dp"/>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="150dp"
+        android:layout_height="3dp"
+        android:layout_below="@+id/tv_motivational_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/bt_generate_new_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/md_ripple_button"
+        android:fontFamily="@font/montserrat"
+        android:padding="10dp"
+        android:text="@string/gerar_nova_frase"
+        android:textColor="@color/white"
+        android:textFontWeight="700"
+        android:layout_above="@+id/bt_logout"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/bt_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/md_ripple_button"
+        android:fontFamily="@font/montserrat"
+        android:padding="10dp"
+        android:text="@string/sair"
+        android:textColor="@color/white"
+        android:textFontWeight="700"
+        android:textSize="18sp" />
+
+</RelativeLayout>
